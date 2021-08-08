@@ -9,7 +9,7 @@ layout: simple
 # **Abstract**
 Generating portrait images by controlling the motions of existing faces is an important task of great consequence to social media industries. For easy use and intuitive control, semantically meaningful and fully disentangled parameters should be used as the modifications. 
 However, many existing techniques do not provide such fine-grained controls or use indirect editing methods i.e. mimic motions of other individuals. 
-In this paper, a Portrait Image Neural Renderer (PIRenderer) is proposed to control the face motions with the parameters of three-dimensional morphable face models (3DMMs). 
+In this paper, a **Portrait Image Neural Renderer** (PIRenderer) is proposed to control the face motions with the parameters of three-dimensional morphable face models (3DMMs). 
 The proposed model can generate photo-realistic portrait images with accurate movements according to intuitive modifications. 
 Experiments on both direct and indirect editing tasks demonstrate the superiority of this model. 
 Meanwhile, we further extend this model to tackle the audio-driven facial reenactment task by extracting sequential motions from audio inputs. We show that our model can generate coherent videos with convincing movements from only a single reference image and a driving audio stream.
@@ -29,7 +29,8 @@ The **Global-Flow Local-Attention** model is used to spatially transform the sou
 ![Octocat](https://user-images.githubusercontent.com/30292465/75703859-42751880-5cf3-11ea-985b-8ed27ba5433b.jpg)
  -->
 # **Results**
-### **Pose-Guided Person Image<!--  Generation**
+<!--  
+### **Pose-Guided Person Image Generation**
 <p align='center'>  
   <img src='./compare.pdf' width='800'/>
 </p>
