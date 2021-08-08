@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+      <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="simple-header" role="banner">
+      <h1 class="project-name">PIRenderer: Controllable Portrait ImageGeneration via <br> Semantic Neural Rendering</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}
+      </h2>
+
+      
+      <a href="https://arxiv.org" class="btn">ArXiv</a>
+      <a href="https://github.com/RenYurui" class="btn">Code</a>
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+    </main>
+  </body>
+</html>
