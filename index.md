@@ -47,8 +47,27 @@ The **Global-Flow Local-Attention** model is used to spatially transform the sou
  -->
 # **Results**
 
+
+### **Intuitive Portrait Image Editing**
+<p align='center'>  
+  <img src='./intuitive_fast.gif' width='800'/>
+</p>
+
+<p align='center'>  
+  <img src='./intuitive_editing_fast.gif' width='800'/>
+</p>
+
+### **Motion Imitation**
+
+
+
+### **Audio-Driven Facial Reenactment**
+
+
+
 <iframe width="800" height="450" src="https://www.youtube.com/embed/gDhcRcPI1JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p> 
+
+
 
 
 <!--  
