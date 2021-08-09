@@ -14,13 +14,30 @@ The proposed model can generate photo-realistic portrait images with accurate mo
 Experiments on both direct and indirect editing tasks demonstrate the superiority of this model. 
 Meanwhile, we further extend this model to tackle the audio-driven facial reenactment task by extracting sequential motions from audio inputs. We show that our model can generate coherent videos with convincing movements from only a single reference image and a driving audio stream.
 
-<!-- <p align="center">
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Ju0hBzCwsyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p> 
- -->
+
 
 # **Network Architecture**
 The proposed **PIRenderer** can synthesis portrait images by intuitively controlling the face motions with fully disentangled 3DMM parameters. The architecture of this network is shown below. 
+
+![Octocat](./7f6d31da6f7be82214cdce7c185bbc00.jpg)
+
+
+### **The Mapping Network**
+
+The mapping network is used to product latent vectors from the motion descriptors. 
+The learned latent vectors are used to control the warping network and the editing network to synthesize images with accurate motions.
+
+### **The Warping Network**
+
+The warping network is used to estimate the motions between source images and target images.
+It takes the source image  and the latent vector as inputs and generates the flow field containing the coordinate offsets specifying which positions in the sources could be sampled to generate the targets.
+
+
+### **The Editing Network**
+
+Although the warping network is efficient at spatially transforming the source images, it is limited by the inability to generate contents that do not exist in the sources. Meanwhile, artifacts introduced by the warping operation will lead to performance decline. Therefore, an editing network is designed to modify the warped coarse results and generate realistic target images.
+
+
 <!-- 
 The **Global-Flow Local-Attention** model is used to spatially transform the source image information at the feature level. A Global Flow Field Estimator is first employed to predict the flow fields between sources and targets. Then, a Local Neural Texture Renderer is used to to synthesize the final results using local attention.
 ![Octocat](./2e0fc90ebb6d82d09c482744c228ba90.jpg) -->
@@ -29,6 +46,11 @@ The **Global-Flow Local-Attention** model is used to spatially transform the sou
 ![Octocat](https://user-images.githubusercontent.com/30292465/75703859-42751880-5cf3-11ea-985b-8ed27ba5433b.jpg)
  -->
 # **Results**
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/gDhcRcPI1JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p> 
+
+
 <!--  
 ### **Pose-Guided Person Image Generation**
 <p align='center'>  
