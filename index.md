@@ -59,11 +59,18 @@ The **Global-Flow Local-Attention** model is used to spatially transform the sou
 
 ### **Motion Imitation**
 
-
+<p align='center'>  
+  <img src='./reenactment_fast.gif' width='800'/>
+</p>
 
 ### **Audio-Driven Facial Reenactment**
 
+<p align='center'>  
+  <img src='./audio.gif' width='800'/>
+</p>
 
+
+### **More Results**
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/gDhcRcPI1JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
